@@ -1,0 +1,35 @@
+//- One page application
+
+mixin title(text)
+    h2.title= text
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title English Videos
+    body
+        //- Big title
+        .section
+            +title("Automated English Videos")
+
+        //- Scroll down for tutorial on how to get the id and other information from the collegeboard website
+
+        //- Then the input to send the post request
+        //- have one version where you just edit it raw
+        //- And one where you specify only the things that you need to send
+        .section
+            //- have a button in the top right to change from editing the raw version to editing the slimmed down version
+            label URL
+            input.one-line.d-block#url(type="text", name="url")
+
+
+            label Headers
+            input.box#headers(type="text", name="headers")
+
+            label Body
+            input.box#body(type="text", name="body")
+
+        //- Then an explanation of how post requests work
+        //- mention GraphQL API
