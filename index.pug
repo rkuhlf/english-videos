@@ -9,7 +9,7 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title English Videos
-    body
+    body 
         //- Big title
         .section
             +title("Automated English Videos")
@@ -31,5 +31,9 @@ html(lang="en")
             label Body
             input.box#body(type="text", name="body")
 
+            button#send-request(type="submit") Send Request
+
         //- Then an explanation of how post requests work
+        .section
+            +title("How It Works")
         //- mention GraphQL API
