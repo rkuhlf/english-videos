@@ -8,6 +8,9 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+        script(src="./script.js")
+
         title English Videos
     body 
         //- Big title
@@ -15,14 +18,18 @@ html(lang="en")
             +title("Automated English Videos")
 
         //- Scroll down for tutorial on how to get the id and other information from the collegeboard website
+        .section
+            +title("Get Information")
 
         //- Then the input to send the post request
         //- have one version where you just edit it raw
         //- And one where you specify only the things that you need to send
         .section
+            h3 Send Input
             //- have a button in the top right to change from editing the raw version to editing the slimmed down version
+            //- Goes all the way across the top, URL label is on the right
             label URL
-            input.one-line.d-block#url(type="text", name="url")
+            input.one-line.d-block#url(type="text", name="url", value="https://asdf.com")
 
 
             label Headers
