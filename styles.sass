@@ -1,5 +1,9 @@
 // TODO: generate a color pallette
-$primary: #123123
+$white: #eeebd3ff
+$black: #202030ff
+$primarymunsell: #00a878ff
+$highlight: #fe5e41ff
+$secondary: #007ea7ff
 
 *
     margin: 0
@@ -19,5 +23,11 @@ $primary: #123123
 
 
 
-    &:nth-child(3n) // This is probably wrong
+    &:nth-of-type(3n) 
         background-color: $primary
+
+    &:nth-of-type(3n + 1) 
+        background-color: $highlight
+
+    &:nth-of-type(3n + 2) 
+        background-color: $secondary
