@@ -43,4 +43,14 @@ html(lang="en")
         //- Then an explanation of how post requests work
         .section
             +title("How It Works")
-        //- mention GraphQL API
+
+            p
+                The internet consists of connections between frontend websites and backend databases. Both of these are hosted on servers, but generally only the frontend is intended for public use. However, by determining how the backend works, you can fake interactions on the frontend and communicate with the server.
+            
+            //- mention GraphQL API
+            p
+                College Board's website uses a common interface called GraphQL to interact with their servers. By watching the network data, we can figure out how to send our own request to the correct endpoint. 
+
+            //- Describe how the javascript code works on this website
+            //- How are the inputs used
+            p
