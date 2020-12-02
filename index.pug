@@ -38,7 +38,12 @@ html(lang="en")
             label Body
             input.box#body(type="text", name="body")
 
-            button#send-request(type="submit") Send Request
+            .row
+                input#startVideo(type="number")
+                input#endVideo(type="number")
+                //- update this dynamically to show the number of videos you would watch
+                //- ex. watch 14 videos
+                button#send-request(type="submit") Watch videos 
 
         //- Then an explanation of how post requests work
         .section
